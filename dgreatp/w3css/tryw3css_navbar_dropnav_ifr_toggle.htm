@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.w3schools.com/w3css/tryw3css_navbar_dropnav_ifr_toggle.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Sep 2016 16:15:42 GMT -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../lib/w3.css">
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+<ul class="w3-navbar w3-black w3-large">
+  <li><a href="javascript:void(0)">Home</a></li>
+  <li><a href="javascript:void(0)">Link 1</a></li>
+  <li><a href="javascript:void(0)">Link 2</a></li>
+  <li><a href="javascript:void(0)" onclick="w3_open()">Dropnav <i class="fa fa-caret-down"></i></a> </li>
+</ul>
+
+<nav class="w3-dropnav w3-card-2" style="display:none" id="myDropnav">
+  <div class="w3-container">
+  <span onclick="w3_close()" class="w3-closebtn w3-xlarge" title="Close Menu">&times;</span>
+  </div>  
+  <div class="w3-row-padding w3-padding-bottom">
+    <div class="w3-third">
+    <h3>HTML/CSS</h3>
+    <a href="javascript:void(0)">Learn HTML</a>
+    <a href="javascript:void(0)">Learn CSS</a>
+    <a href="javascript:void(0)">Learn W3.CSS</a>
+    </div>
+    <div class="w3-third">    
+    <h3>JavaScript</h3>
+    <a href="javascript:void(0)">Learn JavaScript</a>
+    <a href="javascript:void(0)">Learn jQuery</a>
+    <a href="javascript:void(0)">Learn AppML</a>
+    </div>
+    <div class="w3-third">    
+    <h3>Graphics</h3>
+    <a href="javascript:void(0)">Learn Canvas</a>
+    <a href="javascript:void(0)">Learn SVG</a>
+    </div>
+  </div>
+  <br>
+</nav>
+
+<div class="w3-container">
+  <p>Click on the "Dropnav" button multiple times to toggle the dropnav.</p>
+</div>
+
+<script>
+var x = document.getElementById("myDropnav");
+function w3_open() {
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+function w3_close() {
+    x.className = x.className.replace(" w3-show", "");
+}
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/w3css/tryw3css_navbar_dropnav_ifr_toggle.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Sep 2016 16:15:42 GMT -->
+</html>
+
