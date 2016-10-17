@@ -252,7 +252,7 @@ include('layout/master.php');
 				<div class="ed_time_executor ed_toppadder40">
 					<ul>
 						<li><a href="#">lessons</a> <span>  </span></li>
-						<li><a href="html/default.php">HTML home</a> <span>  </span></li>
+						<li><a href="html/index.php">HTML home</a> <span>  </span></li>
 						<li><a href="#">basic html</a> <span>  </span></li>
 						<li><a href="course_lesson.php">Basic CSS</a> <span>  </span></li>
 						<li><a href="course_lesson.php">Advanced HTML + CSS</a> <span>  </span></li>
